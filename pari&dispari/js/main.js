@@ -10,35 +10,53 @@ let numeroUtente = parseInt(prompt('Scegli un numero da 1 a 5'));
 
 console.log(sceltaUtente);
 console.log(numeroUtente);
-console.log(generaNumeroRandom());
+
+console.log(sommaNumeri(numeroUtente, generaNumeroRandom()));
+
+
+if (sommaNumeri(numeroUtente, generaNumeroRandom()) % 2 === 0) {
+    console.log('somma pari');
+
+    if (sceltaUtente === 'pari') {
+        alert('Hai vinto!');
+    } else {
+        alert('Hai perso!');
+    }
+
+
+}else if (sommaNumeri(numeroUtente, generaNumeroRandom()) % 2 !== 0) {
+    console.log('somma dispari');
+
+    if (sceltaUtente === 'dispari') {
+        alert('Hai vinto!');
+    } else {
+        alert('Hai perso!');
+    }
+}
 
 
 
 
-function generaNumeroRandom() {
+
+
+
+
+    function generaNumeroRandom() {
   let nComputer = Math.floor(Math.random() * 5) + 1;
     console.log(nComputer);
     return nComputer;
+}
 
 
     function sommaNumeri(numeroUtente, nComputer) {
         let somma = numeroUtente + nComputer;
         console.log(somma);
         return somma;
-      }
+    }
 
-      if (sommaNumeri(numeroUtente, nComputer) % 2 === 0) {
-        console.log('Hai vinto!');
-      }
-        else if (sommaNumeri(numeroUtente, nComputer) % 2 !== 0) {
-          console.log('Hai perso!');
-        }
-
-        
-     
+    
 
 
-}
 
 
 
