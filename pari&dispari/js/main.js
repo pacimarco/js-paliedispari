@@ -41,7 +41,7 @@ if (sommaNumeri(numeroUtente, generaNumeroRandom()) % 2 === 0) {
 
 
 
-    function generaNumeroRandom() {
+    function generaNumeroRandom(min, max) {
   let nComputer = Math.floor(Math.random() * 5) + 1;
     console.log(nComputer);
     return nComputer;

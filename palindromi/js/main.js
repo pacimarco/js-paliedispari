@@ -42,3 +42,23 @@ function invertiParola(str){
     let strInversa = str.split("").reverse().join("");
     return strInversa;
 }
+/* 
+const parolaUtente = prompt("Inserisci la tua parola");
+
+function giraParola(scelta) {
+    let parolaGirata = '';
+    
+    for (let i = scelta.length - 1; i >=0; i--) {
+    parolaGirata += scelta[i];
+    }
+
+    return parolaGirata;
+
+}
+if (parolaUtente === giraParola(parolaUtente)) {
+    alert("La parola inserita è palindroma");
+}else {
+    alert("La parola inserita non è palindroma");
+}
+
+*/
